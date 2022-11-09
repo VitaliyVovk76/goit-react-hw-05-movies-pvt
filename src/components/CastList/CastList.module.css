@@ -1,0 +1,16 @@
+.list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 0;
+}
+
+.item {
+  display: block;
+  width: 140px;
+  height: auto;
+  margin: 10px;
+}
+.img{
+    width: 100%;
+}

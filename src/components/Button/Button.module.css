@@ -1,0 +1,19 @@
+.button {
+  display: inline-block;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  color: white;
+  text-decoration: none;
+  background-color: #2196f3;
+  border: none;
+  cursor: pointer;
+  opacity: 0.6;
+  transition: opacity 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.button:hover,
+.button:focus {
+  opacity: 1;
+}

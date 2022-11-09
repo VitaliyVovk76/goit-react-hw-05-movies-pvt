@@ -1,0 +1,28 @@
+ul {
+  list-style: none;
+}
+.list {
+  display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+    padding: 20px;
+}
+
+.item {
+  width: calc((100% - 120px)/4);
+    margin: 15px;
+
+  transition: 0.3s;
+}
+
+.item:hover,
+.item:focus {
+  transform: scale(1.03);
+}
+
+.itemImg {
+  display: block;
+  height: 380px;
+object-fit: cover;
+width: 100%; 
+}
