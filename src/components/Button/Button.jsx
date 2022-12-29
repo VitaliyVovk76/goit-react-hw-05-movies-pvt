@@ -2,10 +2,10 @@ import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
 import s from "./Button.module.css";
 
-const Button = ({ onBackLink, location }) => {
+const Button = ({ onBackLink, onBtnContent }) => {
   return (
     <Link className={s.button} to={onBackLink}>
-      {location?.state?.label ?? "Back"}
+      {onBtnContent}
     </Link>
   );
 };
@@ -14,5 +14,4 @@ export default Button;
 
 Button.propTypes = {
   location: PropTypes.object.isRequired,
-  onBackLink: PropTypes.object.isRequired,
 };

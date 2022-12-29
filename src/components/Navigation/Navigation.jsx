@@ -8,6 +8,7 @@ const Navigation = () => {
         <li className={s.item}>
           <NavLink
             to="/"
+            end
             className={({ isActive }) => (isActive ? s.activeLink : s.link)}
           >
             Home

@@ -11,6 +11,7 @@ const MovieDetalisView = () => {
   const location = useLocation();
 
   const backLinkHref = location.state?.from ?? "/";
+  const btnContent = location?.state?.label ?? "Back";
 
   useEffect(() => {
     bookShelfAPI.fetchMuvieById(movieId).then(setMovie);
@@ -20,16 +21,20 @@ const MovieDetalisView = () => {
     <Container>
       {movie && (
         <div>
-          <Button onBackLink={backLinkHref} location={location} />
+          <Button onBackLink={backLinkHref} onBtnContent={btnContent} />
           <MovieСard movie={movie} />
 
           <h3>Addtional imformation</h3>
           <ul>
             <li>
-              <NavLink to="cast">Cast</NavLink>
+              <NavLink to={"cast"} state={{ from: backLinkHref }}>
+                Cast
+              </NavLink>
             </li>
             <li>
-              <NavLink to="reviews">Reviews</NavLink>
+              <NavLink to={"reviews"} state={{ from: backLinkHref }}>
+                Reviews
+              </NavLink>
             </li>
           </ul>
           <Outlet />
