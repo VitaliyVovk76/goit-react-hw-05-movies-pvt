@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Link, Outlet, useLocation } from "react-router-dom";
+import { Outlet, useLocation } from "react-router-dom";
 import * as bookShelfAPI from "../../services/movieshelf-api";
 import MoviesList from "components/MoviesList";
 import Title from "components/Title";
