@@ -13,7 +13,7 @@ export function App() {
   return (
     <Routes>
       <Route path="/" element={<Layout />}>
-        <Route path="/" element={<HomeView />} />
+        <Route index element={<HomeView />} />
         <Route path="movies" element={<MoviesView />} />
         <Route path="movies/:movieId" element={<MovieDetalisView />}>
           <Route path="cast" element={<CastList />} />
