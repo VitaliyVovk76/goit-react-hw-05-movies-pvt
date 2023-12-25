@@ -14,7 +14,7 @@ const MoviesList = ({ movies, location, btnName }) => {
                 ? `${movie.id}`
                 : `movies/${movie.id}`
             }
-            state={{ from: location, label: btnName }}
+            state={{ from: location, label: "Back to trending" }}
           >
             <img
               className={s.itemImg}
